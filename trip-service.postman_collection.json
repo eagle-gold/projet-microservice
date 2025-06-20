@@ -1,0 +1,126 @@
+{
+  "info": {
+    "name": "Trip Service API",
+    "_postman_id": "8f5bae0c-f232-4630-bf39-2c97cda71480",
+    "description": "Collection for managing trips (create, retrieve, update, delete).",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get all trips",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8084/api/trips",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8084",
+          "path": [
+            "api",
+            "trips"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get trip by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8084/api/trips/{{tripId}}",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8084",
+          "path": [
+            "api",
+            "trips",
+            "{{tripId}}"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Create trip",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Voyage Canada \\u00c9t\\u00e9 2025\",\n  \"startDate\": \"2025-07-01\",\n  \"endDate\": \"2025-07-15\",\n  \"steps\": [\n    {\n      \"cityName\": \"Montreal\",\n      \"accommodationName\": \"Hotel Centre-Ville\",\n      \"activityName\": \"Visite Guid\\u00e9e\"\n    },\n    {\n      \"cityName\": \"Quebec\",\n      \"accommodationName\": \"Auberge du Vieux-Port\",\n      \"activityName\": \"Festival d'\\u00e9t\\u00e9\"\n    }\n  ]\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8084/api/trips",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8084",
+          "path": [
+            "api",
+            "trips"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Update trip",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Voyage Canada - Mise \\u00e0 jour\",\n  \"startDate\": \"2025-07-02\",\n  \"endDate\": \"2025-07-16\",\n  \"steps\": [\n    {\n      \"cityName\": \"Montreal\",\n      \"accommodationName\": \"Hotel Centre-Ville\",\n      \"activityName\": \"Croisi\\u00e8re sur le fleuve\"\n    },\n    {\n      \"cityName\": \"Quebec\",\n      \"accommodationName\": \"Auberge du Vieux-Port\",\n      \"activityName\": \"Concert en plein air\"\n    }\n  ]\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8084/api/trips/{{tripId}}",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8084",
+          "path": [
+            "api",
+            "trips",
+            "{{tripId}}"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Delete trip",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8084/api/trips/{{tripId}}",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8084",
+          "path": [
+            "api",
+            "trips",
+            "{{tripId}}"
+          ]
+        }
+      }
+    }
+  ]
+}

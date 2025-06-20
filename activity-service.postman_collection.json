@@ -1,0 +1,96 @@
+{
+  "info": {
+    "name": "Activity Service API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get all activities",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8083/api/activities",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8083",
+          "path": [
+            "api",
+            "activities"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get activity by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8083/api/activities/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8083",
+          "path": [
+            "api",
+            "activities",
+            ":id"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get activities by POI",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8083/api/activities/poi/:poiName",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8083",
+          "path": [
+            "api",
+            "activities",
+            "poi",
+            ":poiName"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Create activity",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"poiName\": \"Montreal\",\n  \"name\": \"Visite Guid\\u00e9e\",\n  \"startDate\": \"2025-07-01\",\n  \"endDate\": \"2025-07-01\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8083/api/activities",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8083",
+          "path": [
+            "api",
+            "activities"
+          ]
+        }
+      }
+    }
+  ]
+}

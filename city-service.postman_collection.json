@@ -1,0 +1,105 @@
+{
+  "info": {
+    "name": "City Service API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_postman_id": "city-service-20250614183206"
+  },
+  "item": [
+    {
+      "name": "Create City",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Montr\\u00e9al\",\n  \"latitude\": 45.5017,\n  \"longitude\": -73.5673\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8081/api/cities",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "api",
+            "cities"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get All Cities",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8081/api/cities",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "api",
+            "cities"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Update City (id=1)",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Qu\\u00e9bec\",\n  \"latitude\": 46.8139,\n  \"longitude\": -71.208\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8081/api/cities/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "api",
+            "cities",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Delete City (id=1)",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8081/api/cities/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "api",
+            "cities",
+            "1"
+          ]
+        }
+      }
+    }
+  ]
+}

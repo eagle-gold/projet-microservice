@@ -1,0 +1,145 @@
+{
+  "info": {
+    "name": "Accommodation Service API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get all accommodations",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8082/api/accommodations",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8082",
+          "path": [
+            "api",
+            "accommodations"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get accommodation by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8082/api/accommodations/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8082",
+          "path": [
+            "api",
+            "accommodations",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get accommodations by City ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8082/api/accommodations/city/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8082",
+          "path": [
+            "api",
+            "accommodations",
+            "city",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Create accommodation",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"H\\u00f4tel Central\",\n  \"capacity\": 50,\n  \"cityId\": 1\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8082/api/accommodations",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8082",
+          "path": [
+            "api",
+            "accommodations"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Update accommodation",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"H\\u00f4tel Central Deluxe\",\n  \"capacity\": 70,\n  \"cityId\": 1\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8082/api/accommodations/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8082",
+          "path": [
+            "api",
+            "accommodations",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Delete accommodation",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8082/api/accommodations/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8082",
+          "path": [
+            "api",
+            "accommodations",
+            "1"
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+com/example/accommodationservice/repository/AccommodationRepository.class
+com/example/accommodationservice/model/Accommodation.class
+com/example/accommodationservice/service/AccommodationService.class
+com/example/accommodationservice/controller/AccommodationController.class
+com/example/accommodationservice/AccommodationServiceApplication.class

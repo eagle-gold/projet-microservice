@@ -1,0 +1,5 @@
+com/example/activityservice/controller/ActivityController.class
+com/example/activityservice/ActivityServiceApplication.class
+com/example/activityservice/repository/ActivityRepository.class
+com/example/activityservice/model/Activity.class
+com/example/activityservice/service/ActivityService.class

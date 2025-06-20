@@ -1,0 +1,17 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: accommodation-service
+
+  datasource:
+    url: jdbc:postgresql://mongodb:5432/poidb
+    username: poi
+    password: poi
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true

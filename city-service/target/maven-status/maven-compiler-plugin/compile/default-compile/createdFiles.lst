@@ -1,0 +1,5 @@
+com/example/cityservice/service/CityService.class
+com/example/cityservice/model/City.class
+com/example/cityservice/CityServiceApplication.class
+com/example/cityservice/repository/CityRepository.class
+com/example/cityservice/controller/CityController.class
